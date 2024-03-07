@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Add from "../add";
-import Header from "../header";
+import Header from "../top";
 import "./index.scss";
 import { FcLike, FcLikePlaceholder } from "react-icons/fc";
 import EditCom from "../edit";

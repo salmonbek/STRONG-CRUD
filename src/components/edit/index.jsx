@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./index.scss";
-import { toast } from "react-toastify";
+import Cancel from "../../assets/images/close.svg";
+import Save from "../../assets/images/save.svg";
 function EditCom({ active, Close, id }) {
   const [isActive, setIsActive] = useState(active);
   let data = JSON.parse(localStorage.getItem("user")) || [];
@@ -30,13 +31,12 @@ function EditCom({ active, Close, id }) {
     localStorage.setItem("user", JSON.stringify(updateData));
     setIsActive(false);
     Close(false);
-    toast.success("Edit Contact");
   };
   return (
     <>
       <div className={`EditModal ${isActive ? "active" : ""}`}>
         <div className="modal">
-          <h2>Edit Contact</h2>
+          <h2>Edit</h2>
           <form onSubmit={(e) => e.preventDefault()}>
             <input
               type="name"
@@ -77,10 +77,10 @@ function EditCom({ active, Close, id }) {
                   !user.phone
                 }
               >
-                Save
+                <img src={Save} alt="" />
               </button>
               <button className="close" onClick={handleClose}>
-                Close
+                <img src={Cancel} alt="" />
               </button>
             </div>
           </form>

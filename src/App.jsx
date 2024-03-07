@@ -1,4 +1,4 @@
-import Tabel from "./components/tabel";
+import Tabel from "./components/all";
 function App() {
   return (
     <div>

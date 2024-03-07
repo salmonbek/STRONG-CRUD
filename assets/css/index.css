@@ -1,103 +1,162 @@
-.showModal {
+.tabel {
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 8px;
+  padding-bottom: 50px;
+  margin-bottom: 100px;
+  background-color: rgb(250, 234, 234);
+}
+
+.tr {
   width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: rgba(114, 94, 94, 0.368);
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  z-index: 100;
-}
-.showModal .modal {
-  width: 500px;
-  height: 500px;
-  background-color: white;
-  border-radius: 8px;
-}
-.showModal .modal h2 {
-  padding: 20px 0 0 30px;
-  padding-bottom: 30px;
-  color: grey;
-}
-.showModal .modal form {
-  width: 100%;
-  height: 100%;
-}
-.showModal .modal form input {
-  width: 90%;
-  display: block;
-  margin: 0 auto;
   height: 50px;
-  border: 1px solid rgb(219, 208, 208);
-  border-radius: 8px;
-  outline: none;
-  -webkit-box-shadow: 0px 0px 4px 3px rgb(231, 222, 222);
-          box-shadow: 0px 0px 4px 3px rgb(231, 222, 222);
-  margin-top: 20px;
-  padding-left: 10px;
-  font-size: 16px;
-}
-.showModal .modal form select {
-  width: 30%;
-  display: block;
-  margin: 0 auto;
-  height: 50px;
-  border-radius: 8px;
-  outline: none;
-  border: 1px solid rgb(229, 224, 224);
-  margin-top: 50px;
-  padding-left: 10px;
-  font-size: 16px;
-  color: white;
-  background-color: rgb(44, 134, 245);
-}
-.showModal .modal form .btns {
-  width: 90%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  border-bottom: 1px solid rgb(208, 209, 210);
+  margin-top: 20px;
 }
-.showModal .modal form .save {
-  border: none;
-  border-radius: 8px;
-  bottom: 0;
-  color: #fff;
-  cursor: pointer;
-  font-family: sans-serif;
-  font-size: 16px;
-  height: 45px;
-  margin-top: -48px;
-  z-index: 2;
-  background-color: rgb(54, 245, 44);
+.tr p {
+  width: 20%;
 }
-.showModal .modal form .close {
-  border: none;
-  border-radius: 8px;
-  bottom: 0;
-  color: #fff;
-  cursor: pointer;
-  font-family: sans-serif;
-  font-size: 16px;
-  height: 45px;
-  z-index: 2;
-  background-color: rgba(112, 49, 237, 0.815);
-  margin-top: -48px;
-  margin-left: 30px;
+.tr p:nth-child(1) {
+  width: 5%;
+  padding-left: 10px;
 }
 
-.showModal.active {
+.like svg {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.tr1 {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid rgb(208, 209, 210);
+  margin-top: 20px;
+}
+.tr1 p {
+  width: 20%;
+}
+.tr1 p:nth-child(1) {
+  width: 5%;
+  padding-left: 10px;
+}
+
+.edit {
+  background-color: rgb(102, 105, 110);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  width: 60px;
+  height: 40px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.edit svg {
+  fill: white;
+}
+
+.delete {
+  background-color: rgb(249, 77, 95);
+  border: none;
+  border-radius: 8px;
+  margin-right: 10px;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 20px;
+  outline: none;
+  width: 60px;
+  height: 40px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.delete svg {
+  fill: white;
+}
+
+.delete:hover {
+  background-color: rgb(249, 77, 95);
+}
+
+.filter {
+  width: 100%;
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.filter .input {
+  width: 70%;
+}
+.filter .input input {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 17px;
+  padding-left: 20px;
+  -webkit-box-shadow: 0px 0px 3px 3px rgb(196, 193, 193);
+          box-shadow: 0px 0px 3px 3px rgb(196, 193, 193);
+}
+.filter .filter_item {
+  width: 200px;
+  margin-left: 40px;
+}
+.filter .filter_item select {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-size: 17px;
+  padding-left: 20px;
+}
+
+.btns {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+.btns button {
+  width: 25%;
+  height: 50px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  outline: none;
+  font-size: 17px;
+  background-color: white;
+  margin-left: 20px;
+  cursor: pointer;
+  background-color: rgb(235, 105, 200);
+}
+.btns button:hover {
+  -webkit-box-shadow: 0px 0px 10px 3px rgb(238, 193, 193);
+          box-shadow: 0px 0px 10px 3px rgb(238, 193, 193);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
