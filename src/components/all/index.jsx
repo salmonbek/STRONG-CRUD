@@ -140,8 +140,8 @@ function Tabel() {
               <p>#</p>
               <p>FirstName</p>
               <p>LastName</p>
-              <p>Gender</p>
               <p>PhoneNumber</p>
+              <p>Gender</p>
               <p>Favourite</p>
               <p>Action</p>
             </div>
